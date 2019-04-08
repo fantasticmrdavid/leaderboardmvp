@@ -6,13 +6,20 @@ const Competitor = (props) => {
   const {
     Container,
     Firstname,
+    Position,
     Surname,
     Score,
   } = styles;
-  const { firstname, surname, score } = props;
+  const {
+    firstname,
+    position,
+    surname,
+    score,
+  } = props;
 
   return (
-    <Container>
+    <Container leader={position === 0}>
+      <Position>{position + 1}</Position>
       <Surname>{surname}</Surname>
       <Firstname>{firstname}</Firstname>
       <Score>{score}</Score>
@@ -22,6 +29,7 @@ const Competitor = (props) => {
 
 Competitor.propTypes = {
   firstname: PropTypes.string.isRequired,
+  position: PropTypes.number,
   surname: PropTypes.string.isRequired,
   score: PropTypes.number,
 };

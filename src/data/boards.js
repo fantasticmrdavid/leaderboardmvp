@@ -2,6 +2,7 @@ export default [
   {
     id: 'b1',
     access: 'public',
+    title: 'Rock-em Sock-em Robots Division 1',
     competitors: [
       'c1',
       'c2',
@@ -18,6 +19,7 @@ export default [
   {
     id: 'b2',
     access: 'private',
+    title: 'Rock-em Sock-em Robots Division 2',
     competitors: [
       'c11',
       'c12',
@@ -30,6 +32,7 @@ export default [
   {
     id: 'b3',
     access: 'private',
+    title: 'Mario Kart World Championship',
     competitors: [
       'c17',
       'c18',
@@ -42,6 +45,7 @@ export default [
   {
     id: 'b4',
     access: 'public',
+    title: 'The Bachelorette - Easter Edition',
     competitors: [
       'c23',
       'c24',

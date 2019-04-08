@@ -2,20 +2,24 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: auto 40% 40px;
+  grid-template-columns: 25px auto 40% 35px;
+  grid-column-gap: 15px;
   text-transform: capitalize;
-  font-size: ${props => (props.leader ? '1.5rem' : '1.1rem')};
+  font-size: ${props => (props.leader ? '1.35rem' : '1rem')};
   font-weight: ${props => (props.leader ? 500 : undefined)};
   padding: 0.25em 0;
+  text-align: left;
 `;
 
 export const Firstname = styled.div`
-  text-align: left;
+`;
+
+export const Position = styled.div`
+  text-align: right;
 `;
 
 export const Surname = styled.div`
   text-transform: uppercase;
-  text-align: left;
 `;
 
 export const Score = styled.div`

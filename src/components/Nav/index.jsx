@@ -1,11 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import NavUserContainer from 'containers/NavUserContainer';
 import * as styles from './styles';
 
-export default () => {
-  const { Logo } = styles;
+const Nav = ({ showLogin, user }) => {
+  const {
+    Container,
+    Logo,
+    Option,
+  } = styles;
+
   return (
-    <nav>
+    <Container>
       <Logo>Sisu Leaderboard</Logo>
-    </nav>
+      { user ? <NavUserContainer /> : <Option onClick={() => showLogin()}>Sign In</Option> }
+    </Container>
   );
 };
+
+Nav.propTypes = {
+  showLogin: PropTypes.func.isRequired,
+  user: PropTypes.object,
+};
+
+export default Nav;

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Nav from 'components/Nav';
+import DialogsContainer from 'containers/DialogsContainer';
+import NavContainer from 'containers/NavContainer';
 import * as styles from './styles';
 
 const Template = ({ children }) => {
@@ -10,10 +11,11 @@ const Template = ({ children }) => {
   } = styles;
   return (
     <Container>
+      <NavContainer />
       <Content>
-        <Nav />
         {children}
       </Content>
+      <DialogsContainer />
     </Container>
   );
 };

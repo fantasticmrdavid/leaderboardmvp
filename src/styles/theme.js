@@ -4,7 +4,8 @@ const theme = {
   colorRed: 'red',
   colorGreen: 'green',
   colorGrey: '#aaa',
-  colorLightGrey: '#f7f7f7',
+  colorLightGrey: '#ddd',
+  colorCharcoal: '#444',
 
   colorPrimaryLight: '#2981FB',
   colorPrimary: '#0056C7',
@@ -13,14 +14,13 @@ const theme = {
   colorSecondaryDark: '#a50d12',
   colorPlaceholderContent: '#ccc',
 
+  colorBodyBackground: '#f9f9f9',
+  colorLightbox: 'rgba(0, 0, 0, 0.3)',
   colorFont: '#333',
 
   colorDivider: '#ddd',
 
   navHeight: '65px',
-  gutter: '1.5rem',
-  halfGutter: '0.75rem',
-  quarterGutter: '0.375rem',
 
   fontBody: '\'Roboto\', Arial, Helvetica, sans-serif',
 
